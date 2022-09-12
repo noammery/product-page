@@ -1,0 +1,217 @@
+* {
+  margin: 0%;
+  font-family: cursive;
+}
+#page1 {
+  margin: 0%;
+  height: 102%;
+  width: 100%;
+  background-color: #f0eff2;
+  display: grid;
+  grid-template-columns: 20% 50% 15% 15%;
+  grid-template-rows: auto auto auto;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+#img {
+  transition-duration: 1s;
+}
+.item2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  background-image: url(https://images.asos-media.com/products/asos-design-real-leather-blazer-jacket-in-black/200622676-1-black?$n_320w$&wid=317&fit=constrain);
+  background-repeat: no-repeat;
+  width: 460px;
+  height: 608px;
+  background-size: 100%;
+  transition-duration: 1s;
+}
+#bgimg {
+  width: 460px;
+  height: 608px;
+  transition-duration: 1s;
+}
+.item1:hover ~ .item2 #bgimg {
+  opacity: 0;
+}
+.item4:hover ~ .item2 #bgimg {
+  opacity: 0;
+}
+.item4:hover ~ .item2 {
+  background-image: url(https://images.asos-media.com/products/asos-design-oversized-real-leather-shacket-in-black/201493012-1-black?$n_480w$&wid=476&fit=constrain);
+}
+.item5:hover + .item2 #bgimg {
+  opacity: 0;
+}
+.item5:hover + .item2 {
+  background-image: url(https://images.asos-media.com/products/asos-design-faux-leather-essential-biker-jacket-in-black/201185289-1-black?$n_480w$&wid=476&fit=constrain);
+}
+.item3:hover ~ .item2 #bgimg2 {
+  opacity: 1;
+}
+.item3 {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+  grid-column: 3 / 5;
+  grid-row: 1 / 4;
+}
+#comment {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.pickcolor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.colors {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-style: groove;
+  border-color: black;
+}
+.colors:hover ~ .item2 #bgimg {
+  height: 200px;
+}
+.bothsidecolors {
+  display: flex;
+  justify-content: center;
+}
+#color1 {
+  background-color: beige;
+}
+#color2 {
+  background-color: gray;
+}
+#color3 {
+  background-color: black;
+}
+#color4 {
+  background-color: red;
+}
+#header {
+  margin-top: 20px;
+}
+.sizes-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sizes {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border-color: black;
+  border-style: groove;
+  font-weight: bold;
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#add-to-bad {
+  background-color: red;
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+#img {
+  width: 15vw;
+  height: 30vh;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  border-style: groove;
+  border-color: black;
+}
+hr {
+  width: 24vw;
+  background-color: #ff4742;
+}
+.hr {
+  display: flex;
+  justify-content: space-around;
+}
+#details {
+  width: 20vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: black;
+}
+.item4 {
+  grid-column: 1 / 2;
+  grid-row: 2/ 3;
+}
+.item5 {
+  grid-column: 1/ 2;
+  grid-row: 3 / 3;
+  transition-duration: 1s;
+}
+.button-24 {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+.button-24:active {
+  opacity: 0.5;
+}
+#shipping {
+  border-style: dashed;
+  border-color: red;
+  padding: 3px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+  #page1 {
+    height: 124vh;
+    width: 124vw;
+  }
+  #bgimg {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  #img {
+    width: 30vw;
+    height: 30vh;
+  }
+}
